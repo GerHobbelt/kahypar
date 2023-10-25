@@ -25,18 +25,12 @@
 #include <utility>
 
 #include "datastructure/hypergraph.h"
+#include "kahypar-resources/definitions.h"
 
 // Use bucket PQ for FM refinement.
 // #define USE_BUCKET_QUEUE
 
 namespace kahypar {
-using HypernodeID = uint32_t;
-using HyperedgeID = uint32_t;
-using HypernodeWeight = int32_t;
-using HyperedgeWeight = int32_t;
-using PartitionID = int32_t;
-using Gain = HyperedgeWeight;
-
 using Hypergraph = kahypar::ds::GenericHypergraph<HypernodeID,
                                                   HyperedgeID, HypernodeWeight,
                                                   HyperedgeWeight, PartitionID>;
@@ -48,12 +42,6 @@ using HyperedgeVector = Hypergraph::HyperedgeVector;
 using HyperedgeWeightVector = Hypergraph::HyperedgeWeightVector;
 using HypernodeWeightVector = Hypergraph::HypernodeWeightVector;
 using IncidenceIterator = Hypergraph::IncidenceIterator;
-
-// #########Graph-Definitions#############
-using NodeID = HypernodeID;
-using EdgeID = HyperedgeID;
-using EdgeWeight = long double;
-using ClusterID = PartitionID;
 
 using HighResClockTimepoint = std::chrono::time_point<std::chrono::high_resolution_clock>;
 }  // namespace kahypar
