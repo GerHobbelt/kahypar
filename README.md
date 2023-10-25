@@ -1,12 +1,12 @@
   <p align="center"><img src="https://user-images.githubusercontent.com/484403/70459249-0fd0d080-1ab4-11ea-833b-17130ecafc0a.png" alt="KaHyPar - Karlsruhe Hypergraph Partitioning" width="60%" height="60%"></p>
 
-License|Linux & macOS Build|Fossa|Zenodo
-:--:|:--:|:--:|:--:
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)|[![Build Status](https://github.com/kahypar/kahypar/actions/workflows/kahypar_ci.yml/badge.svg)](https://github.com/kahypar/kahypar/actions/workflows/kahypar_ci.yml)|[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSebastianSchlag%2Fkahypar.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2FSebastianSchlag%2Fkahypar?ref=badge_small)|[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2555059.svg)](https://doi.org/10.5281/zenodo.2555059)
+License|Fossa|Zenodo
+:--:|:--:|:--:
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)|[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSebastianSchlag%2Fkahypar.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2FSebastianSchlag%2Fkahypar?ref=badge_small)|[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4500838.svg)](https://doi.org/10.5281/zenodo.4500838)
 
-Code Coverage|Code Quality|Coverity Scan|SonarCloud|Issues
+Linux & macOS Build|Code Coverage|Code Quality|Coverity Scan|Issues
 :--:|:--:|:--:|:--:|:--:
-[![codecov](https://codecov.io/gh/kahypar/kahypar/branch/master/graph/badge.svg)](https://codecov.io/gh/kahypar/kahypar)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/93f46f4897c14ad280ed72d460f85c49)](https://www.codacy.com/gh/kahypar/kahypar/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kahypar/kahypar&amp;utm_campaign=Badge_Grade)|[![Coverity Status](https://scan.coverity.com/projects/11452/badge.svg)](https://scan.coverity.com/projects/11452/badge.svg)|[![Quality Gate](https://sonarcloud.io/api/project_badges/quality_gate?project=KaHyPar)](https://sonarcloud.io/dashboard?id=KaHyPar)|[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/sebastianschlag/kahypar.svg)](http://isitmaintained.com/project/sebastianschlag/kahypar "Average time to resolve an issue")
+[![Build Status](https://github.com/kahypar/kahypar/actions/workflows/kahypar_ci.yml/badge.svg)](https://github.com/kahypar/kahypar/actions/workflows/kahypar_ci.yml)|[![codecov](https://codecov.io/gh/kahypar/kahypar/branch/master/graph/badge.svg)](https://codecov.io/gh/kahypar/kahypar)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/93f46f4897c14ad280ed72d460f85c49)](https://www.codacy.com/gh/kahypar/kahypar/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kahypar/kahypar&amp;utm_campaign=Badge_Grade)|[![Coverity Status](https://scan.coverity.com/projects/11452/badge.svg)](https://scan.coverity.com/projects/11452/badge.svg)|[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/sebastianschlag/kahypar.svg)](http://isitmaintained.com/project/sebastianschlag/kahypar "Average time to resolve an issue")
 
 Table of Contents
 -----------
@@ -194,7 +194,9 @@ The command line parameter `--quiet=1` can be used to suppress all logging outpu
 #### Default / Most Recent Presets
 
 We provide two default framework configurations - one for recursive bipartitioning (*r*KaHyPar) and one for
-direct k-way partitioning (*k*KaHyPar).
+direct k-way partitioning (*k*KaHyPar). 
+
+In general, we recommend using *k*KaHyPar as it performs better than *r*KaHyPar in terms of both running time and solution quality. 
 
 To start ***k*KaHyPar** optimizing the **(connectivity - 1)** objective run:
 
